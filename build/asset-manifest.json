@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.612266b4.css",
+    "main.js": "/static/js/main.f0e88564.js",
+    "static/js/787.590f7fee.chunk.js": "/static/js/787.590f7fee.chunk.js",
+    "static/media/Randhir_image.jpeg": "/static/media/Randhir_image.bf56dfe376a4966be9ff.jpeg",
+    "static/media/resume.pdf": "/static/media/resume.9e60c37879a7b679b58c.pdf",
+    "static/media/leetcode.png": "/static/media/leetcode.da4ed7b2261ecefd4c94.png",
+    "static/media/codechef.png": "/static/media/codechef.6b61806408cc6cb6c128.png",
+    "static/media/Work_experience.jpeg": "/static/media/Work_experience.e9c56c964d74dfccc718.jpeg",
+    "static/media/code-forces.png": "/static/media/code-forces.55922c3726d7db07e0a4.png",
+    "static/media/responsibility.jpeg": "/static/media/responsibility.0e47fcf5b32a2e5bdd70.jpeg",
+    "index.html": "/index.html",
+    "main.612266b4.css.map": "/static/css/main.612266b4.css.map",
+    "main.f0e88564.js.map": "/static/js/main.f0e88564.js.map",
+    "787.590f7fee.chunk.js.map": "/static/js/787.590f7fee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.612266b4.css",
+    "static/js/main.f0e88564.js"
+  ]
+}

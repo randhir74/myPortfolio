@@ -12,8 +12,11 @@ export default function (props) {
         <>
             <div className="front_page">
                 <div className="header">
-                    <p><h4>Hello Myself,</h4><h1>Randhir Kumar!</h1><marquee>I Am a front-end developer, and currently, I'm working to become a full-stack developer.</marquee></p>
-                    {"\n"}
+                <div className="marquee-container">
+                    <marquee className="zigzag-marquee">
+                        I Am a front-end developer, and currently, I'm working to become a full-stack developer.
+                    </marquee>
+                    </div>{"\n"}
                     <p><DownloadButton myUrl={myUrl} /></p>
                     <div>
                         <div className='profile_links'>

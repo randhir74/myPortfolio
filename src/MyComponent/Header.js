@@ -7,7 +7,7 @@ export default function Header(props) {
     
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light custom-navbar-header">
+            <nav className="custom-navbar-header navbar navbar-expand-lg navbar-light bg-custom" style={{ backgroundColor: '#1857d4' }}>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -21,20 +21,8 @@ export default function Header(props) {
                             <Link className="nav-link" to="/about">About</Link>
                         </li>
                     </ul>
-                    {/* <form className="form-inline my-2 my-lg-0">
-                        <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                    </form> */}
                 </div>
             </nav>
         </div>
     )
-}
-Header.defaultProps = {
-    title: "Your Title Here",
-    searchBar: true
-}
-
-Header.propTypes = {
-    title: PropTypes.string,
-    searchBar: PropTypes.bool.isRequired
 }

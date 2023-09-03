@@ -14,7 +14,10 @@ html{
 body{
   overflow-x: hidden;
 }
-
+body, p {
+  margin: 0;
+  padding: 0;
+}
 /* First Page */
 
 .marquee-container {
@@ -45,10 +48,10 @@ body{
 
 /* Header */
 .custom-navbar-header{
+  background-color: #1857d4;
   padding: 0%;
 }
 .custom-navbar{
-  background-color: #1857d4;
   padding: 20px;
 }
 .header{
@@ -57,7 +60,7 @@ body{
 }
 
 .profile-image{
-  margin-top: 5%;
+  margin-top: 8%;
   height: 20%;
   width: 20%;
   border-top-left-radius: 20%;
@@ -72,11 +75,15 @@ body{
   top: 240px;
 }
 
+.profile_links p{
+  margin-top: 16px;
+}
+
 .about-me{
   background-color: #1857d4;
   padding-top: 50px;
   padding-bottom: 50px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 
@@ -109,11 +116,190 @@ body{
   color: #61dafb;
 }
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* AboutIntro  */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f9f3fade;
+  padding: 38px;
+  margin: auto;
+  margin-top: 51px;
+}
+
+.text {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  text-decoration: none;
+  /* background-color: #61dafb; */
+}
+
+.image {
+  flex: 1;
+  text-align: right;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .text, .image {
+      flex: initial;
+      width: 100%;
+      text-align: center;
   }
-} */
+}
+
+
+/* Style for the container box */
+.skills {
+  margin: auto;
+  /* width: 90%; Reduce the width for smaller screens */
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin: 20px 0;  /*Adjust the margin as needed */
+}
+
+.box {
+  width: 100%; /* Adjust the width as needed */
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allow boxes to wrap to the next line on smaller screens */
+  justify-content: space-evenly; /* Center the boxes horizontally */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  margin: 21px; /* Adjust the margin as needed */
+}
+
+/* Adjust the font size for buttons to make them responsive */
+.box button {
+  font-size: 16px; /* You can adjust the font size as needed */
+  margin: 10px;
+}
+
+@media (min-width: 768px) {
+  /* Apply different styles for screens with a minimum width of 768px (tablets and larger) */
+  .skills {
+    width: 80%; /*Increase the width for tablets and larger screens*/
+
+  }
+  .box-container {
+    flex-direction: column; /* Place the .box divs side by side on larger screens */
+    justify-content: space-between; /* Spread the .box divs horizontally */
+    margin: 40px 0px;
+    align-items: center;
+  }
+  .box {
+    width: 80%; /* Set a width for .box divs on larger screens */
+    margin: 10px 0; /* Adjust the margin for .box divs on larger screens */
+  }
+}
+
+
+/* Style for the button */
+button {
+  display: block;
+  /* margin: auto; Adjust the spacing between text and button */
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  width: 100px;
+}
+
+/* Hover effect for the button */
+button:hover {
+  background-color: #0056b3; /* Change the background color on hover */
+}
+
+
+/* Text styling */
+
+.wave {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(209, 36, 36, 0.2));
+  font-family: cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wave span {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  animation: animate 2s ease-in-out infinite;
+  animation-delay: calc(.1s*var(--i));
+}
+
+@keyframes animate {
+  0% {
+      transform: translateY(0px);
+  }
+
+  20% {
+      transform: translateY(-20px);
+  }
+
+  40%,
+  100% {
+      transform: translateY(0px);
+  }
+}
+
+
+
+/* Project Component */
+.ProjectComponent{
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  padding: 64px;
+  margin-top: 50px;
+  background-color: #f9f3fade;
+}
+
+.projectFlex-row{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.projectFlex-item {
+  flex-basis: calc(50% - 20px); /* Adjust the width as needed */
+  margin: 10px; /* Adjust the margin as needed */
+}
+@media (max-width: 768px) {
+  .projectFlex-item {
+    flex-basis: 100%; /* Full width for smaller screens */
+  }
+  .projectFlex-row{
+    margin-top: 0px;
+  }
+}

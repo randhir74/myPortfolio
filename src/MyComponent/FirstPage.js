@@ -7,6 +7,7 @@ import Codechef from './Codechef'
 import myImage from './image/Randhir_image.jpeg';
 import myUrl from '../resume.pdf'
 import DownloadButton from "./DownloadButton";
+import WaveText from "./WaveText";
 export default function (props) {
     return (
         <>
@@ -14,10 +15,12 @@ export default function (props) {
                 <div className="header">
                 <div className="marquee-container">
                     <marquee className="zigzag-marquee">
-                        I Am a front-end developer, and currently, I'm working to become a full-stack developer.
+                        <h2>
+                            <WaveText introString="I Am a front-end developer, and currently, I'm working to become a full-stack developer."/>
+                        </h2>
                     </marquee>
                     </div>{"\n"}
-                    <p><DownloadButton myUrl={myUrl} /></p>
+                    <DownloadButton myUrl={myUrl} />
                     <div>
                         <div className='profile_links'>
                             <p><Linkedin /></p>
